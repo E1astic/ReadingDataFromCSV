@@ -1,17 +1,11 @@
 package org.example;
-
-import com.opencsv.CSVParser;
-import com.opencsv.CSVParserBuilder;
-import com.opencsv.CSVReader;
-import com.opencsv.CSVReaderBuilder;
-import com.opencsv.exceptions.CsvValidationException;
-
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Date;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws CsvValidationException {
-
+    public static void main(String[] args) {
+        List<Person> persons=ForeignNamesCSV.getListOfPersons();
+        for(int i=0;i<10;++i){
+            System.out.println(persons.get(i));
+        }
     }
 }
