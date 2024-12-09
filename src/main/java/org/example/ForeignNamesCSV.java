@@ -14,9 +14,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Класс для работы с файлом foreign_names.csv
+ */
 public class ForeignNamesCSV {
     private static String fileName="foreign_names.csv";
 
+    /**
+     * Данный метод считывает все данные из csv-файла и возвращает
+     * их в виде списка {@link List} из объектов {@link Person}
+     */
    public static List<Person> getListOfPersons(){
         List<Person> persons=new ArrayList<>();
 
